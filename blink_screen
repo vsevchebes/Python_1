@@ -1,0 +1,15 @@
+blink.setup(100,150)
+
+s = blink.Screen()
+s.speed(0)
+while True:
+    #Draw color filled circle
+    s.begin_fill()
+    s.fillcolor('red')
+    s.circle(25)
+    s.end_fill()
+    s.begin_fill()
+    s.fillcolor('white')
+    s.circle(25)
+    s.end_fill()
+blink.done()
