@@ -1,0 +1,7 @@
+import re                                             # reborn it
+
+def findWholeWord(w):
+    return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
+
+findWholeWord('seek')('those who seek shall find')    # -> <match object>
+findWholeWord('word')('swordsmith')                   # -> None
